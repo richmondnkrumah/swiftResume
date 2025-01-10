@@ -1,0 +1,22 @@
+{
+  "name": "Chicago Resume Template",
+  "data": {
+    "firstName": "Richard",
+    "lastName": "Williams",
+    "jobTitle": "Senior Financial Advisor",
+    "experience": [
+      {
+        "jobTitle": "Senior Financial Advisor",
+        "employer": "Wells Fargo Advisors",
+        "startDate": "August 2020",
+        "endDate": "Present",
+        "description": [
+          "Deliver financial advice to clients.",
+          "Optimize investment portfolios."
+        ]
+      }
+    ],
+    "skills": ["Portfolio Management", "Risk Assessment", "Strategic Planning"]
+  },
+  "layout": "<section style='display: flex; flex-direction: column; gap: 24px;'><div style='display: flex; flex-direction: column; align-items: center; gap: 12px;'><h2 style='font-size: 1.875rem; color: #1d4ed8; font-weight: 700; letter-spacing: 0.05em;'>{{default firstName 'Richard'}} {{default lastName 'Williams'}}</h2>    <span style='height: 2px; width: 100%; background-color: #b91c1c; display: block;'></span>    <div style='display: flex; flex-direction: column; align-items: center; font-weight: 600;'>      <p>{{default jobTitle 'Your Job Title'}}</p>    </div>    <span style='height: 2px; width: 100%; background-color: #b91c1c; display: block;'></span>    <p style='text-align: center;'>{{default professionalSummary 'Write a brief summary about yourself.'}}</p>  </div>  <div style='display: flex; flex-direction: column; gap: 20px;'>    <h2 style='font-size: 1.125rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid #ef4444; color: #3b82f6; font-weight: 700;'>      Professional Experience    </h2>    <div>      {{#each experience}}      <div style='display: flex; flex-direction: column; margin-bottom: 8px;'>        <div style='display: flex; justify-content: space-between;'>          <h2 style='font-weight: 700;'>{{default employer 'Employer Name'}}</h2>          <p style='font-weight: 700;'>{{default location 'Location'}}</p>        </div>        <div style='display: flex; justify-content: space-between;'>          <p style='text-transform: capitalize;'>{{default jobTitle 'Job Title'}}</p>          <p>{{default startDate 'Start Date'}} - {{default endDate 'End Date'}}</p>        </div>      </div>      <div style='padding-left: 40px;'>        <ul style='list-style-type: disc;'>          {{#each description}}          <li>{{default this 'Job description goes here...'}}</li>          {{/each}}        </ul>      </div>      {{/each}}    </div>  </div>  <div style='display: flex; flex-direction: column; gap: 20px;'>    <h2 style='font-size: 1.125rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid #ef4444; color: #3b82f6; font-weight: 700;'>      Skills    </h2>    <div style='padding-left: 40px;'>      <ul style='list-style-type: disc;'>        {{#each skills}}        <li>{{default this 'Skill goes here...'}}</li>        {{/each}}      </ul>    </div>  </div></section>"
+}

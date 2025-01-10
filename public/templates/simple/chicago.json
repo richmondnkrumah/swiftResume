@@ -1,0 +1,143 @@
+{
+  "name": "Chicago Resume Template",
+  "category": "Simple",
+  "personalDetails": {
+    "jobTitle": "",
+    "avatar": "",
+    "firstName": "Richard",
+    "lastName": "Williams",
+    "email": "RichardWilliams@gmail.com",
+    "phone": "7706259669",
+    "country": "",
+    "city": "Houston,TX",
+    "address": "3665 Margaret Street",
+    "postalCode": "47587",
+    "divingLicense": "",
+    "nationality": "",
+    "placeOfBirth": "",
+    "dateOfBirth": ""
+  },
+  "professionalSummary": "Financial Advisor with 7+ years of experience delivering financial/Investment advisory serices in high value clients. Proven success in managing multi-million dollar portfolios, driving profitability and increasing ROI through skillful strategic planning, consulting and financial advisory services",
+  "experience": [
+    {
+      "jobTitle": "Senior Financial Advisor",
+      "employer": "Wells Fargo Advisors",
+      "startDate": "August 2020",
+      "endDate": "Present",
+      "city": "Houston,TX",
+      "description": [
+        "Deliver Financial advice to clients proposing strategies to achieve and long term objecties for investments, insurance, business and estate planning with minimal risk",
+        "Develpo, review and optimize investment portfolios for 300+ high value clients with over $190M AUM(Assets Under Managemnet)",
+        "Ensure maximum client satisffaction by providin exceptional and personalized service, enhancing client satisfaction ratings from 88% to 99.9% in less than 6 months",
+        "Work closely with specialist from multiple branches, managing incvestment protfolios for over 800 clients with over $25M in assets under care"
+      ]
+    },
+    {
+      "jobTitle": "Financial Advisor",
+      "employer": "Suntrust Investment Services, INC.",
+      "startDate": "July 2017",
+      "endDate": "August 2020",
+      "city": "New Orleans, LA",
+      "description": [
+        "Served as knowledgeable financial advisor to clients, managing over $20.75M investment portfolio of 90+ individual and corporate clients",
+        "Devised and applied a new training and accountavility program that increased productivity from #10 to #3 in the region in less tha 2 year period",
+        "Partnered with cross-functional teams in consuiltong with clients to provide asset managemenet risk strategy an mutugation whi h increaseed AUM by 50%"
+      ]
+    },
+    {
+      "jobTitle": "Financial Advisor",
+      "employer": "Maverick Capital Management",
+      "startDate": "July 2014",
+      "endDate": "August 2017",
+      "city": "New Orleans, LA",
+      "description": [
+        "Served as the primary point of contact for voer 15 clients",
+        "Managed the portfolios of several major clients with over $8.5M in total assets"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Louisiana state university",
+      "degeree": "Bachelor of science in Business Adminstration(concentration: finance)",
+      "startDate": "",
+      "endDate": "May 2014",
+      "city": "Boston ROuge,LA",
+      "description": "Honors: cum laude (GPA: 3.7/4.0)"
+    }
+  ],
+  "links": "",
+  "skills": [
+    "Proficient in Ms Office, Outlook, MS Project,Salesforce, TPS Project Management",
+    "FLuent in English, Spanish and French"
+  ],
+  "languages": "",
+  "courses": "",
+  "hobbies": [],
+  "layout": {
+    "main": {
+      "styles": "bg-white flex flex-col gap-3"
+    },
+    "sections": {
+      "personalDetails": {
+        "div":[
+          {
+            "content": "Name",
+            "styles": "font-bold",
+            "text": ""
+          },
+          {
+            "content": "None",
+            "styles": "h-2 bg-green-500 w-full",
+            "text": ""
+
+          },
+          {
+            "content": ["address","city","postalCode"],
+            "styles":"",
+            "text": ""
+
+          },
+          {
+            "content": "phone",
+            "styles": "",
+            "text": ""
+
+          },
+          {
+            "content": "email",
+            "styles":"",
+            "text": ""
+
+          }
+        ]
+      },
+      "professionalSummary": {
+        "div":[
+          {
+            "content":"professionalSummary",
+            "styles": "text-center",
+            "text": ""
+
+          }
+        ]
+      },
+      "experience":{
+        "div":[
+          {
+            "content":"None",
+            "styles": "text-blue-400",
+            "text": "Professional Experience"
+          },
+          {
+            "content":"None",
+            "styles":"h-2 bg-green-500 w-full",
+            "text":""
+          },
+          {
+          }
+        ]
+      }
+    }
+  }
+}
