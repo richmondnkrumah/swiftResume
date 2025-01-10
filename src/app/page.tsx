@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import ArrowSvg from "@/assets/one.svg";
 import FlashSvg from "@/assets/two.svg";
 import Icon from "@/components/Icon";
-import { font_DM_SANS } from "./layout";
 import { CARDS } from "@/constants/landingPage";
 import Link from "next/link";
 
@@ -16,7 +15,7 @@ export default function Home() {
         <Hero />
         <section className="grid place-items-center py-[68px] relative ">
           <div
-            className={`max-w-[700px] text-[50px] font-medium  leading-[1.125] tracking-[-0.05px] flex flex-wrap gap-[10px] items-center justify-center ${font_DM_SANS.className}`}
+            className={`max-w-[700px] text-[50px] font-medium  leading-[1.125] tracking-[-0.05px] flex flex-wrap gap-[10px] items-center justify-center`}
           >
             <h1 className="inline">Turn</h1>
             <Icon

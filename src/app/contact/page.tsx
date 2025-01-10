@@ -22,11 +22,11 @@ const Page: React.FC = () => {
         }
         return res.json();
       })
-      .then((response) => response.json())
       .then((data) => setResumeData(data))
       .catch((error) => {
         if (error.message) {
           router.push('/templates')
+          console.log(error.message)
         }
         else {
           setError("An error occurred while fetching the template")
