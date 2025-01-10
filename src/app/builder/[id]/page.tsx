@@ -19,13 +19,12 @@ import { useRouter } from "next/navigation";
 import { useResumeStore } from "@/providers/ResumeStoreProvider";
 
 type Props = {
-  templateID: string;
   params: {
     id: string;
   };
 };
 
-const BuilderPage = ({ templateID, params }: Props) => {
+const BuilderPage = ({ params }: Props) => {
   // const [jobTitle, setJobTitle] = useState<string>("");
   // const [firstName, setFirstName] = useState<string>("");
   // const [lastName, setLastName] = useState<string>("");
@@ -689,67 +688,3 @@ const BuilderPage = ({ templateID, params }: Props) => {
 };
 
 export default BuilderPage;
-
-// 'use client';
-// import React, { useEffect, useState } from "react";
-// import { useRouter } from "next/router";
-// import { motion } from "framer-motion";
-
-// const BuilderPage = () => {
-//   const router = useRouter();
-//   const { template } = router.query; // File path from the URL query
-//   const [templateData, setTemplateData] = useState<any>(null);
-//   const [error, setError] = useState(false);
-
-//   useEffect(() => {
-//     if (template) {
-//       fetch(template as string)
-//         .then((response) => {
-//           if (!response.ok) throw new Error("Error loading template");
-//           return response.json();
-//         })
-//         .then((data) => setTemplateData(data))
-//         .catch(() => setError(true));
-//     }
-//   }, [template]);
-
-//   return (
-//     <div>
-//       {error ? (
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//         >
-//           <p>Error loading template. Please try again later.</p>
-//         </motion.div>
-//       ) : !templateData ? (
-//         <p>Loading...</p>
-//       ) : (
-//         <motion.div
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ duration: 0.5 }}
-//         >
-//           <h1>{templateData.title}</h1>
-//           {templateData.sections.map((section: any, index: number) => (
-//             <motion.div
-//               key={index}
-//               initial={{ y: 20, opacity: 0 }}
-//               animate={{ y: 0, opacity: 1 }}
-//               transition={{ delay: index * 0.2 }}
-//             >
-//               <h2>{section.name}</h2>
-//               <ul>
-//                 {section.fields.map((field: string, idx: number) => (
-//                   <li key={idx}>{field}</li>
-//                 ))}
-//               </ul>
-//             </motion.div>
-//           ))}
-//         </motion.div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default BuilderPage;
